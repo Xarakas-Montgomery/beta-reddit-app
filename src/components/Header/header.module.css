@@ -1,0 +1,123 @@
+.header {
+    /*background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.764), rgba(0, 0, 0, 0.51), white);*/
+    background-color: rgba(3, 13, 20, 0.835);
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    height: 59px;
+    width: 100%;
+    border-radius: 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+
+.home {
+    width: 75%;
+    align-content: center;
+    font-family: "Vast Shadow", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.home a {
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+/*.iconContainer {
+    border: 2px solid black;
+    height: 50%;
+    width: 15%;
+}*/
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 115.65%;
+    margin-left: 10%;
+    border-radius: 50%;
+}
+
+.logo {
+    /*border: 2px solid green;*/
+    margin-left: 0;
+    color:aliceblue;
+    align-self: center;
+    font-family: "Vast Shadow", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 13.75%;
+}
+
+@media screen and (max-width: 543px) {
+    .home {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    .home {
+        font-size: 2.50rem;  
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .home {
+        font-size: 2.20rem;  
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .home {
+        font-size: 1.70rem;  
+    }
+
+    .logo {
+        font-size: 0.90rem;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .home {
+        font-size: 1.50rem;  
+    }
+
+    .logo {
+        font-size: 0.80rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home {
+        font-size: 1.20rem;  
+    }
+
+    .logo {
+        font-size: 0.70rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .home {
+        font-size: 1.15rem;  
+    }
+
+    .logo {
+        font-size: 0.60rem;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .home {
+        font-size: 1.15rem;  
+    }
+
+    .logo {
+        font-size: 0.57rem;
+    }
+}

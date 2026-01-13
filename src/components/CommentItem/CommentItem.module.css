@@ -1,0 +1,812 @@
+.commentItem {
+  display: flex;
+  width: auto;
+  gap: 0;
+  margin-top: 12px;
+  border-radius: 0 20px;
+  background-color: rgba(33, 36, 37, 0.739);
+  color: white;
+  box-shadow: 1px 1.5px 1.5px black;
+  padding: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1.5px 1.5px black;
+  cursor: pointer;
+}
+
+.commentContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.author {
+    color: rgba(178, 68, 187, 0.921);
+  font-weight: bold;
+  font-size: 1.15rem;
+  width: auto;
+  margin-bottom: 30px;
+  margin-right: 600px; 
+}
+
+.comment {
+  margin-right: 270px;
+  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  word-break: break-word;   /* breaks long words/URLs if necessary */
+  overflow-wrap: anywhere;  /* more aggressive wrapping for long unbroken strings */
+}
+
+.date {
+  color: rgb(216, 83, 26);
+  font-size: 0.8rem;
+  text-shadow: 0.75px 0.75px 0.75px black;
+}
+
+.replies {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    width: 60%;
+}
+
+.replyItem {
+    width: auto; 
+    background-color: rgba(255, 255, 255, 0.82);  
+    color: black;
+    box-shadow: 1px 1.5px 1px rgb(216, 83, 26);
+}
+
+.replyAuthor {
+    color: rgb(216, 83, 26);
+}
+
+/*.replyComment {
+}*/
+
+.replyTag {
+    color: rgba(235, 77, 77, 0.956);
+    word-break: break-word; 
+    overflow-wrap: anywhere;
+}
+
+/* Media Screen */
+@media screen and (min-width: 1503px) {
+    .author {
+        font-size: 2.6rem;
+        width: 41.5%;
+    }
+
+    .avatar {
+        width: 71.50px;
+        height: 71.50px;
+    }
+
+    .comment {
+        width: 83.5%;
+    }
+
+    .replies {
+        width: 80.25%;
+    }
+
+    .replyAuthor {
+        font-size: 1.85rem;
+        width: 50%;
+    }
+
+    .replyComment {
+        width: 79%;
+    }
+}
+
+@media screen and (max-width: 1502px) {
+    .author {
+        font-size: 2.55rem;
+        width: 41%;
+    }
+
+    .avatar {
+        width: 71px;
+        height: 71px;
+    }
+
+    .comment {
+        width: 85%;
+    }
+
+    .replies {
+        width: 81.25%;
+    }
+
+    .replyAuthor {
+        font-size: 1.82rem;
+        width: 40%;
+    }
+
+    .replyComment {
+        width: 79%;
+    }
+}
+
+@media screen and (max-width: 1452px) {
+    .author {
+        font-size: 2.5rem;
+        width: 45%;
+    }
+
+    .avatar {
+        width: 70.50px;
+        height: 70.50px;
+    }
+
+    .comment {
+        width: 86%;
+    }
+
+    .replies {
+        width: 81%;
+    }
+
+    .replyAuthor {
+        font-size: 1.80rem;
+        width: 40%;
+    }
+
+    .replyComment {
+        width: 81%;
+    }
+}
+
+@media screen and (max-width: 1402px) {
+    .author {
+        font-size: 2.45rem;
+        width: 35%;
+    }
+
+    .avatar {
+        width: 69px;
+        height: 69px;
+    }
+
+    .comment {
+        width: 87%;
+    }
+
+    .replies {
+        width: 82.5%;
+    }
+
+    .replyAuthor {
+        font-size: 1.77rem;
+        width: 35%;
+    }
+
+    .replyComment {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1352px) {
+    .author {
+        font-size: 2.42rem;
+        width: 34%;
+    }
+
+    .avatar {
+        width: 67px;
+        height: 67px;
+    }
+
+    .comment {
+        width: 85%;
+    }
+
+    .replies {
+        width: 81.5%;
+    }
+
+    .replyAuthor {
+        font-size: 1.73rem;
+        width: 40%;
+    }
+
+    .replyComment {
+        width: 82%;
+    }
+}
+@media screen and (max-width: 1302px) {
+    .author {
+        font-size: 2.35rem;
+        width: 35%;
+    }
+
+    .avatar {
+        width: 66px;
+        height: 66px;
+    }
+
+    .comment {
+        width: 82%;
+    }
+
+    .replies {
+        width: 79%;
+    }
+
+    .replyAuthor {
+        font-size: 1.70rem;
+        width: 36.75%;
+    }
+
+    .replyComment {
+        width: 79.55%;
+    }
+}
+
+@media screen and (max-width: 1252px) {
+    .author {
+        font-size: 2.30rem;
+        width: 35%;
+    }
+
+    .avatar {
+        width: 64px;
+        height: 64px;
+    }
+
+    .comment {
+        width: 80%;
+    }
+
+    .replies {
+        width: 76.25%;
+    }
+
+    .replyAuthor {
+        font-size: 1.66rem;
+        width: 34%;
+    }
+
+    .replyComment {
+        width: 76%;
+    }
+}
+
+@media screen and (max-width: 1202px) {
+    .author {
+        font-size: 2.25rem;
+        width: 35%;
+    }
+
+    .avatar {
+        width: 65px;
+        height: 65px;
+    }
+
+    .comment {
+        width: 76.5%;
+    }
+
+    .replies {
+        width: 73.40%;
+    }
+
+    .replyAuthor {
+        font-size: 1.59rem;
+        width: 33%;
+    }
+
+    .replyComment {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    .author {
+        font-size: 2.1rem;
+        width: 34%;
+    }
+
+    .avatar {
+        width: 63px;
+        height: 63px;
+    }
+
+    .comment {
+        width: 76%;
+    }
+
+    .replies {
+        width: 72%;
+    }
+
+    .replyAuthor {
+        font-size: 1.5rem;
+        width: 30%;
+    }
+
+    .replyComment {
+        width: 71%;
+    }
+}
+
+@media screen and (max-width: 1102px) {
+    .author {
+        font-size: 2.09rem;
+        width: 33%;
+    }
+
+    .avatar {
+        width: 62px;
+        height: 62px;
+    }
+
+    .comment {
+        width: 73%;
+    }
+
+    .replies {
+        width: 69%;
+    }
+
+    .replyAuthor {
+        font-size: 1.47rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 1052px) {
+    .author {
+        font-size: 2.07rem;
+        width: 33%;
+    }
+
+    .avatar {
+        width: 61px;
+        height: 61px;
+    }
+
+    .comment {
+        width: 69%;
+    }
+
+    .replies {
+        width: 66%;
+    }
+
+    .replyAuthor {
+        font-size: 1.48rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 64%;
+    }
+}
+@media screen and (max-width: 1002px) {
+    .author {
+        font-size: 2.05rem;
+        width: 32%;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .comment {
+        width: 65%;
+    }
+
+    .replies {
+        width: 62.75%;
+    }
+
+    .replyAuthor {
+        font-size: 1.47rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 952px) {
+    .author {
+        font-size: 2rem;
+        width: 32%;
+    }
+
+    .avatar {
+        width: 59px;
+        height: 59px;
+    }
+
+    .comment {
+        width: 62%;
+    }
+
+    .replies {
+        width: 59%;
+    }
+
+    .replyAuthor {
+        font-size: 1.42rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 902px) {
+    .author {
+        font-size: 1.95rem;
+        width: 30%;
+    }
+
+    .avatar {
+        width: 58px;
+        height: 58px;
+    }
+
+    .comment {
+        width: 58%;
+    }
+
+    .replies {
+        width: 56%;
+    }
+
+    .replyAuthor {
+        font-size: 1.45rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .author {
+        font-size: 1.85rem;
+        width: 30%;
+    }
+
+    .avatar {
+        width: 57px;
+        height: 57px;
+    }
+
+    .comment {
+        width: 55%;
+    }
+
+    .replies {
+        width: 54%;
+    }
+
+    .replyAuthor {
+        font-size: 1.35rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .author {
+        font-size: 1.8rem;
+        width: 32%;
+    }
+
+    .avatar {
+        width: 56px;
+        height: 56px;
+    }
+
+    .comment {
+        width: 53%;
+    }
+
+    .replies {
+        width: 51%;
+    }
+
+    .replyAuthor {
+        font-size: 1.3rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .author {
+        font-size: 1.70rem;
+        width: 30%;
+    }
+
+    .avatar {
+        width: 55px;
+        height: 55px;
+    }
+
+    .comment {
+        width: 49%;
+    }
+
+    .replies {
+        width: 48%;
+    }
+
+    .replyAuthor {
+        font-size: 1.26rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 45.5%;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    .author {
+        font-size: 1.65rem;
+        width: 30%;
+    }
+
+    .avatar {
+        width: 53.5px;
+        height: 53.5px;
+    }
+
+    .comment {
+        width: 45%;
+    }
+
+    .replies {
+        width: 45%;
+    }
+
+    .replyAuthor {
+        font-size: 1.22rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 41.5%;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .author {
+        width: 27%;
+        font-size: 1.6rem;
+    }
+
+    .avatar {
+        width: 52px;
+        height: 52px;
+    }
+
+    .comment {
+        width: 42%;
+    }
+
+    .replies {
+        width: 42%;
+    }
+
+    .replyAuthor {
+        font-size: 1.2rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .author {
+        width: 25%;
+        font-size: 1.7rem;
+    }
+
+    .avatar {
+        width: 51px;
+        height: 51px;
+    }
+
+    .comment {
+        width: 38%;
+    }
+
+    .replies {
+        width: 38.25%;
+    }
+
+    .replyAuthor {
+        font-size: 1.2rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 34.5%;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .author {
+        width: 25%;
+        font-size: 1.55rem;
+    }
+    .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .comment {
+        width: 35%;
+    }
+
+    .replies {
+        width: 35%;
+    }
+
+    .replyAuthor {
+        font-size: 1.15rem;
+        width:30%;
+    }
+
+    .replyComment {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .author {
+        width: 24%;
+        font-size: 1.5rem;
+    }
+
+    .avatar {
+        width: 48.5px;
+        height: 48.5px;
+    }
+
+    .replyAuthor {
+        width: 30%;
+        font-size: 1.1rem;
+    }
+
+    .comment {
+        width: 32%;
+    }
+
+    .replies {
+        width: 32%;
+    }
+
+    .replyComment {
+        width: 25.5%;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .avatar {
+        width: 47px;
+        height: 47px;
+    }
+
+    .author {
+        width: 22%;
+        font-size: 1.4rem;
+    }
+
+    .comment {
+        width: 30%;
+        font-size: 0.8rem;
+    }
+
+    .replies {
+        width: 30%;
+    }
+
+    .replyAuthor {
+        font-size: 0.9rem;
+    }
+
+    .replyComment {
+        width: 27% ;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    .avatar {
+        width: 45.5px;
+        height: 45.5px;
+    }
+
+    .author {
+        width: 21%;
+        font-size: 1rem;
+    }
+
+    .comment {
+        width: 28%;
+        font-size: 0.8rem;
+    }
+    .replies {
+        width: 29%;
+    }
+
+    .replyAuthor {
+        font-size: 0.9rem;
+    }
+
+    .replyComment {
+        width: 26% ;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .avatar {
+        width: 45px;
+        height: 45px;
+    }
+
+    .author {
+        width: 20%;
+    }
+
+    .comment {
+        width: 29%;
+    }
+
+    .replyAuthor {
+        width: 18%;
+        font-size: 0.75rem;
+    }
+
+    .replies {
+        width: 30%;
+    }
+
+    .replyComment {
+        width: 25%;
+        font-size: 0.65rem;
+    }
+};
+
+@media screen and (max-width: 370px) {
+    .replies {
+        width: 20%;
+    }
+
+    .replyComment {
+        width: 14% !important;
+    }
+};
+    

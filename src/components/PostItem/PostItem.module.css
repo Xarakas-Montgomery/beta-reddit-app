@@ -1,0 +1,220 @@
+.postItem {
+    border: 1px solid #ccc;
+    border-radius: 0px 30px;
+    padding: 16px;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    background-color: rgba(7, 6, 6, 0.332);
+    box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.666);
+}
+
+.title {
+    border: 1px solid #ccc;
+    border-radius: 0px 30px;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.666);   
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color: #071017f9;
+    background-color: #eeeeee9e;
+}
+
+.title:hover {
+    color: rgba(254, 255, 255, 0.846);
+}
+
+.linkTitle {
+    text-decoration: darkred;
+}
+
+.image {
+    box-shadow: 2px 2.5px 2.5px black;
+    width: 500px;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.02);
+}
+
+.author {
+    color: rgba(108, 47, 220, 0.876);
+}
+
+.selfText {
+    font-size: 1.30rem;
+}
+
+.postFirstComment {
+  border-radius: 0 20px;
+  background-color: rgba(84, 165, 227, 0.428);
+  box-shadow: 1px 1.5px 1.5px black;
+  display: flex;
+  gap: 0;
+  margin-top: 12px;
+  align-items: flex-start; /* avatar aligns with top of comment */
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.commentIcon {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.commentUser {
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+  margin-right: 600px;
+  width: 35%;
+}
+
+.commentText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 750px;
+  color: #555;
+}
+
+.commentDate {
+  color: #999;
+  font-size: 0.8rem;
+  margin-right: 100px;
+}
+
+/* Media Screen */
+@media screen and (max-width: 1201px) {
+    .commentText {
+      width: 90.15%;
+}
+}
+
+@media screen and (max-width: 1101px) {
+    .commentText {
+      width: 80.15%;
+}
+}
+
+@media screen and (max-width: 1001px) {
+    .commentText {
+      width: 70.15%;
+}
+    .commentDate {
+      margin-right: 175px;        
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .commentText {
+      width: 60.15%;
+}
+    .commentDate {
+      margin-right: 250px;       
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .commentText {
+      width: 52%;
+}
+}
+
+@media screen and (max-width: 756px) {
+    .commentText {
+      width: 47%;
+}
+    .commentDate {
+      margin-right: 415px;        
+    }
+}
+
+@media screen and (max-width: 701px) {
+    .image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .commentText {
+      width: 45%;
+}
+    .commentDate {
+      margin-right: 400px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+    .commentText {
+      width: 42.7%;
+}
+    .commentDate {
+      margin-right: 400px;
+    }
+}
+
+@media screen and (max-width: 581px) {
+    .image {
+        width: 280px;
+        height: 280px;
+    }
+    .commentText {
+      width: 30%;
+}
+    .commentDate {
+      margin-right: 500px;        
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+    .commentText {
+      width: 25%;
+}
+    .commentDate {
+      margin-right: 500px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+    .commentText {
+      width: 25%;
+}
+    .commentDate {
+      margin-right: 500px;  
+    }
+}
+@media screen and (max-width: 350px) {
+    .image {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .image {
+        width: 140px;
+        height: 140px;
+    }
+}
